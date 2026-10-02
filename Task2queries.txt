@@ -1,0 +1,20 @@
+2 ?- female(X).
+X = sara ;
+X = nora.
+
+3 ?- male(_).
+true .
+
+4 ?- parent(X,faisal),parent(G,X),male(G).
+X = muhammad,
+G = ali.
+
+5 ?- female(X),parent(ahmad,X).
+X = sara ;
+X = nora.
+
+6 ?- parent(X,ahmad),parent(X,muhammad).
+X = ali.
+
+7 ?- male(khan),parent(X,khan),parent(X,nora).
+X = ahmad.
